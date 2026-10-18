@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website pertama saya yang dibuat dengan HTML.">
+  <title>Website Pertamaku</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    .kartu {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 450px;
+      margin: 30px auto;
+      box-shadow: 0 4px 12px #cccccc;
+    }
+
+    h1 {
+      color: #1769ff;
+    }
+
+    button {
+      background: #1769ff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="kartu">
+    <h1>Halo, Dunia!</h1>
+    <p>Selamat datang di website pertama saya.</p>
+    <p>Website ini dibuat menggunakan HTML dan CSS.</p>
+
+    <button onclick="sapa()">Klik Saya</button>
+    <p id="hasil"></p>
+  </div>
+
+  <script>
+    function sapa() {
+      document.getElementById("hasil").textContent =
+        "Halo! Website saya berhasil dijalankan.";
+    }
+  </script>
+</body>
+</html>
